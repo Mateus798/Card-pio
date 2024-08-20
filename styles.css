@@ -1,0 +1,246 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fc;
+    color: #333;
+}
+
+header {
+    background-color: #003366;
+    color: #fff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f4a261;
+}
+
+/* Estilo dos Botões */
+button {
+    background-color: #005f73;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #008891;
+    transform: scale(1.05);
+}
+
+/* Estilo Principal */
+main {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Menu de Produtos */
+#menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Cartões de Produtos */
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 240px;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 10px;
+    height: 160px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 15px 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.card p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Carrinho de Compras */
+.hidden {
+    display: none;
+}
+
+aside {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    position: fixed;
+    top: 10%;
+    right: 0;
+    width: 350px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    transition: right 0.3s ease;
+}
+
+aside h2 {
+    margin-top: 0;
+    color: #003366;
+    font-size: 1.5rem;
+}
+
+/* Itens do Carrinho */
+#cart-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#cart-items li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cart-items button {
+    background-color: #e63946;
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#cart-items button:hover {
+    background-color: #d62839;
+}
+
+/* Formulário de Contato */
+.fale-conosco {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.fale-conosco h2 {
+    text-align: center;
+    color: #003366;
+    font-size: 1.8rem;
+}
+
+.fale-conosco form {
+    display: flex;
+    flex-direction: column;
+}
+
+.fale-conosco .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.fale-conosco .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+    font-weight: 500;
+}
+
+.fale-conosco .form-group input,
+.fale-conosco .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.fale-conosco .form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.fale-conosco .form-group input[type="submit"] {
+    background-color: #003366;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.fale-conosco .form-group input[type="submit"]:hover {
+    background-color: #005f73;
+}
+
+.fale-conosco .optional-info {
+    margin-top: 1.5rem;
+    padding: 15px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.fale-conosco .optional-info h3 {
+    margin: 0 0 1rem;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.fale-conosco .optional-info p {
+    margin: 0;
+    color: #666;
+}

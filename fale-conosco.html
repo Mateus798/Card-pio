@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quentinhas do Grau - Fale Conosco</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Quentinhas do Grau</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="nossa-historia.html">Nossa História</a></li>
+                <li><a href="fale-conosco.html">Fale Conosco</a></li>
+            </ul>
+        </nav>
+        <button id="cart-button">Carrinho (0)</button>
+    </header>
+
+    <main>
+        <section class="fale-conosco">
+            <h2>Fale Conosco</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="problem">Relatar problema (opcional):</label>
+                    <textarea id="problem" name="problem" rows="2"></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+            <div class="optional-info">
+                <h3>Informações Opcionais</h3>
+                <p>Se desejar fornecer mais informações, sinta-se à vontade para descrevê-las aqui.</p>
+            </div>
+        </section>
+    </main>
+
+    <aside id="cart-container" class="hidden">
+        <h2>Carrinho</h2>
+        <ul id="cart-items"></ul>
+        <button id="clear-cart">Limpar Carrinho</button>
+        <button id="close-cart">Fechar</button>
+    </aside>
+
+    <script src="script.js"></script>
+</body>
+</html>
